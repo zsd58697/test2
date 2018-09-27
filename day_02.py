@@ -236,6 +236,15 @@ else:
     print("the comper paper.you are rock.you won.")
 '''
 '''
+10.
+from random import *
+p=['A','2','3','4','5','6','7','8','9','10','J','Q','K']
+m=['mh','ht','fk','ht']
+a=choice(p)
+b=choice(m)
+print("the card you picked is the {} of {}".format(a,b))
+'''
+'''
 11.
 a=eval(raw_input("enter a three-digit integer:"))
 x=a%10
