@@ -165,6 +165,20 @@ elif y>b&y<a:
 elif z>b&z<a:
     print(b,z,a)
 '''
+x,y,z=eval(raw_input("enter three number:"))
+if x>y:
+    x=x
+else:
+    x=y
+if x>z:
+    x=x
+else:
+    x=z
+if y>z:
+    y=y
+else:
+    y=z
+print(z,y,x)
 '''
 5.
 eight1,price1= eval (raw_input("enter wight and price for package:"))
@@ -177,10 +191,10 @@ else:
 '''
 6.
 month,year = eval(raw_input("enter month and year:"))
-if (year%4 == 0&year%100!=0) | year%400==0:
+if (year%4 == 0)&(year%100!=0) | (year%400==0):
     if month==2:
         print("{} year two month have 29 days".format(year))
-elif(month==1|month==3|month==5|month==7|month==8|month==10|month==12):
+elif(month==1)|(month==3)|(month==5)|(month==7)|(month==8)|(month==10)|(month==12):
     print("{} year {} month have 31 days".format(year,month))
 elif(month==2):
     print("{} year two month have 28 days".format(year))
@@ -202,7 +216,7 @@ else:
 import random
 a=random.randint(0,2)
 b=eval(raw_input("scissor(0),rock(1),paper(2):"))
-if a==0&b==0:
+if (a==0)&(b==0):
     print("the comper scissor.you are scissor.It is a draw.")
 elif a==0&b==1:
     print("the comper scissor.you are rock.you won")
@@ -231,6 +245,7 @@ if x==y:
 else:
     print("{} is not a palidrome".format(a))
 '''
+'''
 x,y,z=eval(raw_input("enter three edges:"))
 if x+y>z:
     print("the perimeter is {}".format(x+y+z))
@@ -240,7 +255,7 @@ elif y+z>x:
     print("the perimeter is {}".format(x+y+z))
 else:
     print("ERROR")
-
+'''
 
 
 
