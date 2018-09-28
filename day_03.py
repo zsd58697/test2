@@ -17,15 +17,25 @@ a=float((s1+s2)*1.0/(i+j)*1.0)
 print("zheng shu have {} ge,fu shu have {} ge, sum is {},aravage is {}".format(i,j,s1+s2,a))
 '''
 '''
-'''
-'''
-
 2.
 A=eval(raw_input("enter di yi nian xue fei:"))
 for i in range(10):
-    A1=A*(1.5)
-    A=A+A*(1.5)
-print("enter 10 years after xue fei : {} and sum {}".format(A1,A))
+    A=A*(1.5)
+for i in range(14):
+    A1=A1+A
+print("enter 10 years after xue fei : {} and sum {}".format(A,A1))
+
+'''
+'''
+a = 10000 
+i,s = 0,0
+for i in range(10):
+    a=a*(1+0.05)
+print("10 years later ${}".format(a))
+for i in range(4):
+    s=s+a
+    a=a*(1+0.05)
+print("4 years add {}".format(s))
 '''
 '''
 3.
@@ -36,7 +46,6 @@ for i in range(100,1000):
         print(str(i)+' ',end='')
     if s==10:
         print()
-        s=0
 '''
 '''
 4.
