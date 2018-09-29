@@ -130,7 +130,32 @@ def distance (a,b,c,d):
     print(d)
 distance(x1,y1,x2,y2)
 '''
-
+'''
+8.
+print("p,pow(2,p)-1")
+s=0
+for i in range(2,32):
+    s=pow(2,i)-1
+    print(i,s)
+'''
+'''
+10.
+import random
+n1=random.randint(1,6)
+n2=random.randint(1,6)
+if (n1+n2==2)|(n1+n2==3)|(n1+n2==12):
+    print("you rolled is {} + {} ={}\nyou lose".format(n1,n2,n1+n2))
+elif (n1+n2==7)|(n1+n2==11):
+    print("you rolled is {} + {} = {}\nyou win".format(n1,n2,n1+n2))
+elif (n1+n2==4)|(n1+n2==5)|(n1+n2==6)|(n1+n2==8)|(n1+n2==9)|(n1+n2==10):
+    print("you rolled {} + {} = {}\npoint is {}".format(n1,n2,n1+n2,n1+n2))
+    n1=random.randint(1,6)
+    n2=random.randint(1,6)
+    if(n1+n2)!=(n1+n2):
+        print("you rolled {} + {} = {}\nyou win".format(n1,n2,n1+n2,n1+n2))
+    else:
+        print("you rolled {} + {} = {}\nyou lose".format(n1,n2,n1+n2,n1+n2))
+'''
 
 
 
