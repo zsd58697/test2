@@ -66,7 +66,8 @@ class Fan:
 Fan(3,not False,10,'yellow')
 Fan(2,False,5,'blue')
 '''
-'''
+
+
 class xd:
     def __init__(self,x1,y1,x2,y2,x3,y3,x4,y4):
         self.x1=x1
@@ -78,14 +79,42 @@ class xd:
         self.x4=x4
         self.y4=y4
     def k(self):
-        self.k1=(self.y2-self.y1)/(self.x2-self.x1)
-        self.k2=(self.y4-self.y3)/(self.x4-self.x3)
-        if self.k2==self.k1:
+        k1=(self.y2-self.y1)/(self.x2-self.x1)
+        k2=(self.y4-self.y3)/(self.x4-self.x3)
+        if k2==k1:
             print("no have jiao dian")
         else:
-            
-'''
+            #print(k1,k2)
+            return k1,k2
+    def b(self):
+        k1,k2=self.k()
+        b1=k1*self.x1-self.y1
+        b2=k2*self.x3-self.y3
+        return b1,b2
+    def Yzuobiao(self):
+        b1,b2=self.b()
+        k1,k2=self.k()
+        y=(b1-(k1*b2))/(k2-k1)
+        return y
+    def Xzuobiao(self):
+        b1,b2=self.b()
+        k1,k2=self.k()
+        y=self.Yzuobiao()
+        x=(y-b2)/k2
+        return x
+    def a(self):
+        x=self.Xzuobiao()
+        y=self.Yzuobiao()
+        print(x,y)
+xd(2,2,0,0,0,2,2,0).k()
+xd(2,2,0,0,0,2,2,0).b()
+xd(2,2,0,0,0,2,2,0).Yzuobiao()
+xd(2,2,0,0,0,2,2,0).Xzuobiao()
+xd(2,2,0,0,0,2,2,0).a()
 
+
+'''
+5.
 class LinearEquation:
     def __init__(self,a,b,c,d,e,f):
         self.__a=a
@@ -110,7 +139,7 @@ A=LinearEquation(3,4,2,3,1,1)
 A.isSolvable()
 A.getX()
 A.getY()
-
+'''
 
 
 
