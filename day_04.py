@@ -147,6 +147,11 @@ for i in range(1,32):
 print("%d\t%d"%(i,c))
 '''
 '''
+9.
+from time import *
+print(ctime(time()))
+'''
+'''
 10.
 import random
 n1=random.randint(1,6)
@@ -177,7 +182,32 @@ def f(c,b):
         print(i,p)
 f(p,a)
 '''
-
+'''
+10.2
+a,b=eval(input("Enter one  and two:"))
+if(a+b==2)|(a+b==3)|(a+b==12):
+    print("You rolled %d+%d=%d"%(a,b,a+b))
+    print("You lose")
+elif(a+b==7)|(a+b==11):
+    print("You rolled %d+%d=%d"%(a,b,a+b))
+    print("You win")
+else:
+    while(1):
+        print("You rolled %d+%d=%d"%(a,b,a+b))
+        print("print is %d"%(a+b))
+        s=a+b
+        a,b=eval(input("Enter one  and two:"))
+        if(a+b==7):
+            print("You rolled %d+%d=%d"%(a,b,a+b))
+            print("You lose")
+            break
+        elif(a+b==s):
+            print("You rolled %d+%d=%d"%(a,b,s))
+            print("You win")
+            break
+        else:
+           continue
+'''
 
 
 
