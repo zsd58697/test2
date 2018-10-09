@@ -68,6 +68,8 @@ Fan(2,False,5,'blue')
 '''
 
 
+'''
+4.
 class xd:
     def __init__(self,x1,y1,x2,y2,x3,y3,x4,y4):
         self.x1=x1
@@ -88,8 +90,8 @@ class xd:
             return k1,k2
     def b(self):
         k1,k2=self.k()
-        b1=k1*self.x1-self.y1
-        b2=k2*self.x3-self.y3
+        b1=-(k1*self.x1-self.y1)
+        b2=-(k2*self.x3-self.y3)
         return b1,b2
     def Yzuobiao(self):
         b1,b2=self.b()
@@ -111,7 +113,7 @@ xd(2,2,0,0,0,2,2,0).b()
 xd(2,2,0,0,0,2,2,0).Yzuobiao()
 xd(2,2,0,0,0,2,2,0).Xzuobiao()
 xd(2,2,0,0,0,2,2,0).a()
-
+'''
 
 '''
 5.
