@@ -152,14 +152,23 @@ elif (n1+n2==4)|(n1+n2==5)|(n1+n2==6)|(n1+n2==8)|(n1+n2==9)|(n1+n2==10):
     n1=random.randint(1,6)
     n2=random.randint(1,6)
     if(n1+n2)!=(n1+n2):
-        print("you rolled {} + {} = {}\nyou win".format(n1,n2,n1+n2,n1+n2))
+        print("you rolled {} + {} = {}\nyou lose".format(n1,n2,n1+n2))
     else:
-        print("you rolled {} + {} = {}\nyou lose".format(n1,n2,n1+n2,n1+n2))
+        print("you rolled {} + {} = {}\nyou win".format(n1,n2,n1+n2))
 '''
-
-
-
-
+'''
+4.
+import math
+p=eval(raw_input("the amount invested:"))
+a=eval(raw_input("annual interest rate:"))
+def f(c,b):
+    global p,a
+    print("years   future value ")
+    for i in range(1,31):
+        p=p*pow((1+a/12),12)
+        print(i,p)
+f(p,a)
+'''
 
 
 
