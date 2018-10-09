@@ -160,14 +160,19 @@ if (n1+n2==2)|(n1+n2==3)|(n1+n2==12):
     print("you rolled is {} + {} ={}\nyou lose".format(n1,n2,n1+n2))
 elif (n1+n2==7)|(n1+n2==11):
     print("you rolled is {} + {} = {}\nyou win".format(n1,n2,n1+n2))
-elif (n1+n2==4)|(n1+n2==5)|(n1+n2==6)|(n1+n2==8)|(n1+n2==9)|(n1+n2==10):
+else:
+    while(1)
     print("you rolled {} + {} = {}\npoint is {}".format(n1,n2,n1+n2,n1+n2))
     n1=random.randint(1,6)
     n2=random.randint(1,6)
-    if(n1+n2)!=(n1+n2):
+    if(n1+n2==7):
         print("you rolled {} + {} = {}\nyou lose".format(n1,n2,n1+n2))
-    else:
+        break
+    elif(n1+n2==n1+n2):
         print("you rolled {} + {} = {}\nyou win".format(n1,n2,n1+n2))
+        break
+    else:
+        continue
 '''
 '''
 4.
@@ -184,7 +189,7 @@ f(p,a)
 '''
 '''
 10.2
-a,b=eval(input("Enter one  and two:"))
+a,b=eval(rinput("Enter one  and two:"))
 if(a+b==2)|(a+b==3)|(a+b==12):
     print("You rolled %d+%d=%d"%(a,b,a+b))
     print("You lose")
