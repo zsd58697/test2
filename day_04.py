@@ -63,15 +63,6 @@ displaySortedNumbers(a,b,c)
 '''
 
 '''
-4.
-money=eval(raw_input("the amount invested:"))
-rate=eval(raw_input("annual interest rate:"))
-print("Years  Future Value")
-for i in (30):
-    s=money*rate(1+rate)
-'''
-
-'''
 5.
 a,b=raw_input("enter begin number and stop number :").split(',')
 c= eval(raw_input("enter a number:"))
@@ -137,6 +128,23 @@ s=0
 for i in range(2,32):
     s=pow(2,i)-1
     print(i,s)
+'''
+'''
+8.2
+print("p\t2^p-1:")
+def s(a):
+    c=0
+    for j in range(2,int(sqrt(a)+1)):
+            if a%j==0:
+                c=0
+            else:
+                c=1
+    return c
+print("2\t3")
+for i in range(1,32):
+    c=pow(2,i)-1
+    if(s(c)):
+print("%d\t%d"%(i,c))
 '''
 '''
 10.
