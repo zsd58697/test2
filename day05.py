@@ -85,6 +85,7 @@ class xd:
         k2=(self.y4-self.y3)/(self.x4-self.x3)
         if k2==k1:
             print("no have jiao dian")
+            exit(0)
         else:
             #print(k1,k2)
             return k1,k2
