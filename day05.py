@@ -115,7 +115,7 @@ xd(2,2,0,0,0,2,2,0).Xzuobiao()
 xd(2,2,0,0,0,2,2,0).a()
 '''
 
-'''
+
 5.
 class LinearEquation:
     def __init__(self,a,b,c,d,e,f):
@@ -131,6 +131,7 @@ class LinearEquation:
             return True
         else:
             print("fang cheng wu jie")
+            exit(0)
     def getX(self):
         self.x=((self.__e*self.__d)-(self.__b*self.__f))/((self.__a*self.__d)-(self.__b*self.__c))
         print(self.x)
@@ -141,7 +142,7 @@ A=LinearEquation(3,4,2,3,1,1)
 A.isSolvable()
 A.getX()
 A.getY()
-'''
+
 
 
 
