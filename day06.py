@@ -19,3 +19,14 @@ for i in (a):
         b.append(i)
 print b
 '''
+
+'''
+a4 = [['liuyanyun',22,['360',100]],['jingjing',12,['baidu',1]],['taotao',-1,['Google',0]]]
+a4.sort(key = lambda x:x[2][1])
+print a4
+'''
+a4 = [['liuyanyun',22,['360',100]],['jingjing',12,['baidu',1]],['taotao',-1,['Google',0]]]
+a5=sorted(a4,key = lambda x:x[2][1])
+print a5
+
+
