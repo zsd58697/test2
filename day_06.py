@@ -140,9 +140,29 @@ def countletters(s1):
 a=raw_input("enter a string:")
 countletters(a)
 '''
-
-
-
+def getNumber(u):
+    global a
+    for i in a:
+        if (i=='a' or i=='A'or i=='b'or i=='B'or i=='c'or i=='C'):
+            i='2'
+        if (i=='d' or i=='D'or i=='e'or i=='E'or i=='f'or i=='F'):
+            i='3'
+        if (i=='g' or i=='G'or i=='h'or i=='H'or i=='i'or i=='I'):
+            i='4'
+        if (i=='j' or i=='J'or i=='k'or i=='K'or i=='l'or i=='L'):
+            i='5'
+        if (i=='m' or i=='M'or i=='n'or i=='N'or i=='o'or i=='O'):
+            i='6'
+        if (i=='q' or i=='Q'or i=='r'or i=='R'or i=='s'or i=='S' or i=='p' or i=='P'):
+            i='7'
+        if (i=='t' or i=='T'or i=='u'or i=='U'or i=='v'or i=='v'):
+            i='8'
+        if (i=='w' or i=='W'or i=='x'or i=='X'or i=='y'or i=='Y' or i=='z'or i=='Z'):
+            i='9'
+        print (i,end='')
+    print()
+a=input("enter a telephone number:")
+getNumber(a)
 
 
 
