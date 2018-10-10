@@ -140,6 +140,8 @@ def countletters(s1):
 a=raw_input("enter a string:")
 countletters(a)
 '''
+'''
+5.更改电话号码
 def getNumber(u):
     global a
     for i in a:
@@ -163,9 +165,25 @@ def getNumber(u):
     print()
 a=input("enter a telephone number:")
 getNumber(a)
-
-
-
+'''
+'''
+6.reverse函数的应用
+a=eval(raw_input("enter a number:"))
+a.reverse()
+print(a)
+'''
+a=str(input("enter a 12 wei shu:"))
+s=0
+j=0
+for i in (13):
+    a[i]=int(a[i])
+    if (i%2==0):
+        a[i]=3*a[i]
+    s=s+a[i]
+    j=10-s%10
+    if j==10:
+        j=0
+    print(a[i],end==''+j)
 
 
 
