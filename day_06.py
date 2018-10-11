@@ -172,18 +172,46 @@ a=eval(raw_input("enter a number:"))
 a.reverse()
 print(a)
 '''
-a=str(input("enter a 12 wei shu:"))
+'''
+a=input("enter a number:")
+a_list=list(a)
+res=0
+res_1=0
+res_2=0
+for i in range (len(a_list)):
+    res=int(a_list[i])*2
+    if res>=10:
+        res_1=res%10
+        res_2=res/10
+        res_s=res_1+res_2
+        res+=res_s
+    else:
+        res +=res
+    if i%2!=0:
+        res_2+=int(a_list[i])
+res =res+res_2
+if res%10==0:
+    print("true")
+else:
+    print("error")
+'''
+
+a1=input("enter a 12 wei shu:")
+a=list(a1)
 s=0
 j=0
-for i in (13):
+for i in range(13):
     a[i]=int(a[i])
     if (i%2==0):
         a[i]=3*a[i]
+    else:
+        a[i]=a[i]
     s=s+a[i]
-    j=10-s%10
-    if j==10:
-        j=0
-    print(a[i],end==''+j)
+    print(a[i],end='')
+j=10-s%10
+if j==10:
+    j=0
+print(j)
 
 
 
