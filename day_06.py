@@ -138,7 +138,8 @@ getNumber(a)
 '''
 '''
 6.reverse函数的应用
-a=eval(raw_input("enter a number:"))
+a1=eval(raw_input("enter a number:"))
+a=list(a1)
 a.reverse()
 print(a)
 '''
