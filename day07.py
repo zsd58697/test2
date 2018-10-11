@@ -1,6 +1,6 @@
 # _*_ coding:utf8-
 
-'''
+
 a=raw_input("enter password:")
 class ep3:
     def __init__(self,a):
@@ -10,6 +10,7 @@ class ep3:
             return self.a
         else:
             print("invalid password ,chang du bu gou")
+            exit(0)
     def pd2(self):
         a=self.pd()
         b = a.isalnum()
@@ -17,6 +18,7 @@ class ep3:
             return a
         else:
             print("invalid password ,no have zi mu or no have shu")
+            exit(0)
     def pd3(self):
         a=self.pd2()
         s=0
@@ -31,7 +33,7 @@ class ep3:
             print("invalid password")
 A=ep3(a)
 A.pd3()
-'''
+
 '''
 反转
 a1=raw_input("enter a number:")
@@ -54,6 +56,7 @@ print a1.popitem()
 a1['11']=1
 print a1
 '''
+'''
 #path1='/root/a.txt'
 path='/root/wangan.txt'
 #file_save=open(path1,'a',encoding='utf-8')
@@ -72,7 +75,7 @@ with open(path,'r',encoding='utf-8',errors='ignore') as f:
        # finally:
         #    print('over')
 
-
+'''
 
 
 
