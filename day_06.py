@@ -188,8 +188,8 @@ for i in range (len(a_list)):
     else:
         res +=res
     if i%2!=0:
-        res_2+=int(a_list[i])
-res =res+res_2
+        res_3+=int(a_list[i])
+res =res+res_3
 if res%10==0:
     print("true")
 else:
