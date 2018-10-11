@@ -1,4 +1,5 @@
 # _*_ coding:utf8-
+
 '''
 a=raw_input("enter password:")
 class ep3:
@@ -38,7 +39,7 @@ a=list(a1)
 a.reverse()
 print(a)
 '''
-
+'''
 a1={'1':1,'2':2,'aa':{1,2}}
 print a1.keys()
 print a1.values()
@@ -52,11 +53,24 @@ print a1
 print a1.popitem()
 a1['11']=1
 print a1
-
-
-
-
-
+'''
+#path1='/root/a.txt'
+path='/root/wangan.txt'
+#file_save=open(path1,'a',encoding='utf-8')
+with open(path,'r',encoding='utf-8',errors='ignore') as f:
+    #while 1:
+    line =f.readline().strip('\n').split(',')
+    print(line)
+        #try:
+            #res=line[-2]
+            #if '@' in res:
+                #file_save.write(res+'\n')
+             #   print (res)
+        #except Exception as e:
+         #   print(e)
+            #print(line)
+       # finally:
+        #    print('over')
 
 
 
