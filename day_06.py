@@ -26,7 +26,7 @@ file.close()
 
 
 '''
-判断社会安全号码是否符合规范：
+1.判断社会安全号码是否符合规范：
 def pd(q):
     global a
     if len(a)==11:
@@ -76,37 +76,7 @@ if b in a:
 else:
     print("b no a zi chuan")
 '''
-'''
-a=raw_input("enter password:")
-class ep3:
-    def __init__(self,a):
-        self.a=a
-    def pd(self):
-        if len(self.a)>=8:
-            return self.a
-        else:
-            print("invalid password ,chang du bu gou")
-    def pd2(self):
-        a=self.pd()
-        b = a.isalnum()
-        if( b==True):
-            return a
-        else:
-            print("invalid password ,no have zi mu or no have shu")
-    def pd3(self):
-        a=self.pd2()
-        s=0
-        for i in range(len(a)+1):
-            if a[i]>='0'and a[i]<='9':
-                s=s+1
-        if s>2:
-            print("true")
-        else:
-            print("invalid password")
-A=ep3(a)
-A.pd3()
 
-'''
 '''
 3.判断password
 def A(n):
@@ -173,6 +143,7 @@ a.reverse()
 print(a)
 '''
 '''
+7.信用卡
 a=input("enter a number:")
 a_list=list(a)
 res=0
@@ -195,7 +166,8 @@ if res%10==0:
 else:
     print("error")
 '''
-
+'''
+8.书的校验值
 a1=input("enter a 12 wei shu:")
 a=list(a1)
 s=0
@@ -212,7 +184,7 @@ j=10-s%10
 if j==10:
     j=0
 print(j)
-
+'''
 
 
 
