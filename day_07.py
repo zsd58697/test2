@@ -165,8 +165,42 @@ for i in range(len(a)):
 a=list(a)
 print(a)
 '''
+'''
+11.
+a=[]
+a1={}
+b1={}
+b=[]
+c1={}
+c=[]
+d1={}
+d=[]
+e=[]
+for i in range(1,14):
+    i=str(i)
+    a1[i]='HT'+i
+    b1[i]='FK'+i
+    c1[i]='HT'+i
+    d1[i]='MH'+i
+a=a1.values()
+b=b1.values()
+c=c1.values()
+d=c1.values()
+e=a+b+c+d
+print(e)
+'''
 
-
+a1=raw_input("enter a number list:")
+a=a1.split()
+try:
+    for i in range(len(a)+4):
+        if (a[i]==a[i+1]) and (a[i]==a[i+1]) and(a[i]==a[i+2])and (a[i]==a[i+3]):
+            print("yes")
+            break
+        else:
+            continue
+except:
+    print("no")
 
 
 
