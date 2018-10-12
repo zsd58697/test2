@@ -173,7 +173,7 @@ a1=input("enter a 12 wei shu:")
 a=list(a1)
 s=0
 j=0
-for i in range(13):
+for i in range(len(a)):
     a[i]=int(a[i])
     if (i%2==0):
         a[i]=3*a[i]
