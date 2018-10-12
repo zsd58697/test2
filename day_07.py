@@ -127,6 +127,38 @@ s1=a.count(b)
 indexSE(a,s1,c)
 '''
 '''
+7.1打乱列表的顺序：
+import random
+def shuffle(lst):
+    rest_list=[]
+    for i in range(len(lst)):
+        print(len(lst))
+        index=random.randint(0,len(lst)-1)
+        res=lst.pop(index)
+        rest_list.append(res)
+    print(rest_list)
+a1=raw_input("enter some numbers:")
+a=a1.split()
+shuffle(a)
+'''
+'''
+7.2
+import random
+def shuffle(lst):
+    rest_list=[]
+    count=0
+    while len(rest_list)!=len(lst):
+        count+=1
+        index=random.randint(0,len(lst)-1)
+        if lst[index] not in rest_list:
+            rest_list.append(lst[index])
+    print(rest_list,count)
+a1=input("enter some numbers:")
+a=a1.split()
+shuffle(a)
+'''
+
+'''
 8.去重
 a1=raw_input("enter some number:")
 def eli(lst):
@@ -165,31 +197,27 @@ for i in range(len(a)):
 a=list(a)
 print(a)
 '''
-'''
-11.
-a=[]
-a1={}
-b1={}
-b=[]
-c1={}
-c=[]
-d1={}
-d=[]
-e=[]
-for i in range(1,14):
-    i=str(i)
-    a1[i]='HT'+i
-    b1[i]='FK'+i
-    c1[i]='HT'+i
-    d1[i]='MH'+i
-a=a1.values()
-b=b1.values()
-c=c1.values()
-d=c1.values()
-e=a+b+c+d
-print(e)
-'''
 
+'''
+11.扑克牌
+import random
+def youhuiquan():
+    list_ = [1,2,3,4,5,6,7,8,9,0,10,11,12,13]
+    list_2 =['红桃','黑桃','梅花','方块']
+    rest_list=[]
+    count=0
+    while len(rest_list)!=4:
+        count+=1
+        random_1 = random.randint(0,12)
+        random_2 = random.randint(0,3)
+        if list_2[random_2] not in rest_list:
+            print('获得牌: {}{}'.format(list_2[random_2],list_[random_1]))  
+            rest_list.append(list_2[random_2])
+        print('Pick: '+ str(count))
+youhuiquan()
+'''
+'''
+12.
 a1=raw_input("enter a number list:")
 a=a1.split()
 try:
@@ -201,7 +229,7 @@ try:
             continue
 except:
     print("no")
-
+'''
 
 
 
